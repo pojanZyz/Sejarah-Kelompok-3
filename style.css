@@ -41,7 +41,7 @@ body {
     justify-content: space-between;
     margin-top: 10px;
     width: 100%;
-    max-width: 25rem;
+    max-width: 21rem;
 }
 
 /* Dropdown */
@@ -153,6 +153,7 @@ audio {
         display: none;
         flex-direction: column;
         width: 100%;
+        max-width: 25rem;
         text-align: center;
         background: #2c3e50;
         position: absolute;
