@@ -12,13 +12,15 @@
         <h4>Himpunan Kebaktian Jawa - Kelompok 3</h4>
         <button class="hamburger" onclick="toggleMenu()">☰</button>
         <div class="navigation" id="navMenu">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
             <div class="dropdown">
                 <button class="dropbtn">Nama Pembicara</button>
                 <div class="dropdown-content">
-                    <a href="#">Ahmad Faozan</a>
-                    <a href="#">Chindy Aulia</a>
-                    <a href="#">Alzira Ukhty Zaskia</a>
-                    <a href="#">Nama 4</a>
+                    <a href=".faozan">Ahmad Faozan Zebua</a>
+                    <a href=".alzira">Alzira Ukhty Zaskia</a>
+                    <a href=".amanda">Amanda Aulia Shafira</a>
+                    <a href=".cindi">Chindy Aulia</a>
+                    <a href=".dimas">Dimas Pradhivta</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -27,17 +29,20 @@
                     <a href="#pendahuluan">Pendahuluan</a>
                     <a href="#latar-belakang">Sejarah & Latar Belakang</a>
                     <a href="#ciri">Ciri Khas & Tujuan</a>
-                    <a href="#">Struktur Ibadah</a>
-                    <a href="#">Kesimpulan</a>
+                    <a href="#ibadah">Struktur Ibadah</a>
+                    <a href="#peran">Peran Dalam Masyarakat</a>
+                    <a href="#tantangan">Tantangan & Perkembangan</a>
+                    <a href="#kesimpulan">Kesimpulan</a>
                 </div>
             </div>
         </div>
     </nav>
     
     <div class="container">
-        <div class="card" id="pendahuluan">
+        <div class="card faozan" id="pendahuluan">
             <h3>Pendahuluan (Faozan)</h3>
-            <p>Himpunan Kebaktian Jawa (HKJ) adalah organisasi yang berfokus pada ibadah dan pelayanan dalam bahasa serta budaya Jawa.</p>
+            <p>Himpunan Kebaktian Jawa (HKJ) adalah suatu kelompok atau organisasi yang berfokus pada ibadah dan pelayanan dalam bahasa serta budaya Jawa. HKJ sering kali menjadi bagian dari gereja-gereja yang ingin mempertahankan tradisi keagamaan dalam konteks budaya Jawa.  
+            </p>
             <div class="audio-container">
                 <audio controls>
                     <source src="sound/pendahuluan.mp3">
@@ -46,8 +51,8 @@
         </div>
         
         <div class="card" id="latar-belakang">
-            <h3>Sejarah & Latar Belakang</h3>
-            <p>HKJ muncul sebagai bagian dari upaya untuk mempertahankan dan mengembangkan kekristenan di kalangan masyarakat Jawa.</p>
+            <h3>Sejarah & Latar Belakang (Faozan)</h3>
+            <p>HKJ muncul sebagai bagian dari upaya untuk mempertahankan dan mengembangkan kekristenan di kalangan masyarakat Jawa. Sejarahnya dapat ditelusuri dari era kolonial hingga saat ini, dengan tokoh-tokoh gereja yang berperan dalam penerjemahan Alkitab ke dalam bahasa Jawa serta pengembangan liturgi yang sesuai dengan tradisi setempat. </p>
             <div class="audio-container">
                 <audio controls>
                     <source src="sound/sejarah.mp3">
@@ -55,13 +60,30 @@
             </div>
         </div>
         
-        <div class="card" id="ciri">
-            <h3>Ciri Khas & Tujuan</h3>
+        <div class="card dimas" id="ciri">
+            <h3>Ciri Khas & Tujuan (Dimas)</h3>
             <ul>
-                <li>Penggunaan Bahasa Jawa dalam kebaktian</li>
-                <li>Liturgi dengan nuansa budaya Jawa</li>
-                <li>Pelestarian budaya Jawa dalam kehidupan rohani</li>
-                <li>Membangun komunitas dalam kebersamaan dan pelayanan</li>
+                <li>Penggunaan Bahasa Jawa dalam kebaktian : Seluruh kebaktian, doa, dan nyanyian dilakukan dalam bahasa Jawa, baik dalam bentuk krama alus maupun ngoko.</li>
+                <li>Liturgi dengan nuansa budaya Jawa : Menggunakan lagu-lagu rohani dalam langgam Jawa seperti tembang macapat.</li>
+                <li>Pelestarian budaya Jawa dalam kehidupan rohani : Selain sebagai bentuk ibadah, HKJ juga bertujuan melestarikan budaya Jawa dalam kehidupan rohani.</li>
+                <li>Membangun komunitas dalam kebersamaan dan pelayanan : Membangun komunitas yang erat dalam kebersamaan dan pelayanan sosial.</li>
+            </ul>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="sound/ciri_khas.mp3">
+                </audio>
+            </div>
+        </div>
+
+        <div class="card" id="ibadah">
+            <h3>Struktur Ibadah (Faozan)</h3>
+            <ul>
+                <li>Pembukaan: Salam dan pujian menggunakan tembang Jawa.</li>
+                <li>Doa Pembukaan: Menggunakan bahasa Jawa halus.</li>
+                <li>Pembacaan Firman Tuhan: Diambil dari Alkitab berbahasa Jawa.</li>
+                <li>Khotbah: Disampaikan dalam bahasa Jawa dengan gaya tutur yang khas.</li>
+                <li>Doa Syafaat dan Persembahan: Ditutup dengan doa berbahasa Jawa.</li>
+                <li>Pujian dan Penutup: Biasanya diiringi gamelan atau instrumen khas Jawa.  </li>
             </ul>
             <div class="audio-container">
                 <audio controls>
@@ -79,4 +101,3 @@
     </script>
 </body>
 </html>
-
