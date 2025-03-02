@@ -19,19 +19,32 @@ body {
     flex-wrap: wrap;
 }
 
-.navbar h3 {
+.navbar h4 {
     color: white;
     margin: 0;
     font-size: 1.2rem;
 }
 
+/* Tombol Hamburger */
+.hamburger {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/* Menu Navigasi */
 .navigation {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
     width: 100%;
-    max-width: 21rem;
+    max-width: 25rem;
 }
 
+/* Dropdown */
 .dropdown {
     position: relative;
 }
@@ -124,33 +137,62 @@ audio {
     max-width: 300px;
 }
 
+/* Responsif untuk Mobile */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
+
+    .hamburger {
+        display: block;
+    }
+
     .navigation {
-        width: 100%;
-        display: flex;
+        display: none;
         flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #2c3e50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
     }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .dropdown {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
     .dropbtn {
         width: 100%;
         text-align: left;
     }
+
     .dropdown-content {
         width: 100%;
         position: relative;
     }
+
     .container {
         padding-top: 140px;
     }
+
     .card {
         padding: 15px;
     }
+
     .card h3 {
         font-size: 1.3rem;
     }
+
     .card p, .card ul {
         font-size: 0.95rem;
     }
