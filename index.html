@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <h3>Himpunan Kebaktian Jawa - Kelompok 3</h3>
-        <div class="navigation">
+    <nav class="navbar">
+        <h4>Himpunan Kebaktian Jawa - Kelompok 3</h4>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="navigation" id="navMenu">
             <div class="dropdown">
                 <button class="dropbtn">Nama Pembicara</button>
                 <div class="dropdown-content">
@@ -31,7 +32,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
     
     <div class="container">
         <div class="card">
@@ -46,7 +47,7 @@
         
         <div class="card">
             <h3>Sejarah & Latar Belakang</h3>
-            <p>HKJ muncul sebagai bagian dari upaya untuk mempertahankan dan mengembangkan kekristenan di kalangan masyarakat Jawa. Sejarahnya dapat ditelusuri dari era kolonial hingga saat ini, dengan tokoh-tokoh gereja yang berperan dalam penerjemahan Alkitab ke dalam bahasa Jawa serta pengembangan liturgi yang sesuai dengan tradisi setempat.</p>
+            <p>HKJ muncul sebagai bagian dari upaya untuk mempertahankan dan mengembangkan kekristenan di kalangan masyarakat Jawa.</p>
             <div class="audio-container">
                 <audio controls>
                     <source src="sound/sejarah.mp3">
@@ -57,8 +58,8 @@
         <div class="card">
             <h3>Ciri Khas & Tujuan</h3>
             <ul>
-                <li>Penggunaan Bahasa Jawa dalam kebaktian : Seluruh kebaktian, doa, dan nyanyian dilakukan dalam bahasa Jawa, baik dalam bentuk krama alus maupun ngoko.</li>
-                <li>Liturgi dengan nuansa budaya Jawa : Menggunakan lagu-lagu rohani dalam langgam Jawa seperti tembang macapat.</li>
+                <li>Penggunaan Bahasa Jawa dalam kebaktian</li>
+                <li>Liturgi dengan nuansa budaya Jawa</li>
                 <li>Pelestarian budaya Jawa dalam kehidupan rohani</li>
                 <li>Membangun komunitas dalam kebersamaan dan pelayanan</li>
             </ul>
@@ -69,5 +70,12 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
